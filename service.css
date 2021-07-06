@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+label.logo{
+    margin-left: 190px;
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+  }
+nav{
+    background: black;
+    height: 70px;
+    width: 100%;
+    
+  }
+nav ul{
+    float: right;
+     margin-right: 150px;
+     font-family: 'Lustria', serif;
+  }
+  nav ul li{
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+  
+    text-decoration: none;
+    
+  
+  }
+  nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    text-decoration: none;
+      font-weight: 700;
+      background:
+      linear-gradient(currentColor 0 0) 0 0,
+      linear-gradient(currentColor 0 0) 0 0,
+      linear-gradient(currentColor 0 0) 100% 100%,
+      linear-gradient(currentColor 0 0) 100% 100%;
+    background-size: var(--d, 0) 3px, 3px var(--d, 0);
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
+  a.active,a:hover{
+    --d: 100%;
+      padding: 6px 24px;
+      color: white;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+      font-family: 'Lobster', cursive;
+    }
+    nav ul li a{
+      font-size: 16px;
+      
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      top: 70px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+     
+      
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      
+    }
+    nav ul li a{
+      font-size: 20px;
+     
+    }
+   
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+ .serv {
+     border: 2px solid white;
+     padding: 4px 16px;
+     border-radius: 50px;
+     background-color: white;
+     color: black;
+     font-size: 20px; font-family: 'Lustria', serif;
+     font-weight: 700;
+ }
+
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     margin-top: 100px;
+     text-align: center;
+     margin-bottom: 50px;
+     
+ }
+
+.container img {
+     width: 300px;
+     height:  300px;
+     
+}
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 20px; font-family: 'Lustria', serif;
+}
+.container a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    border: 2px solid white;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding: 4px 16px;
+    background-color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+.container .HA {
+    border: 2px solid black;
+    padding: 16px 26px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.container .CN {
+    border: 2px solid black;
+    padding: 16px 26px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.container .BP {
+    border: 2px solid black;
+    padding: 16px 26px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.container a:hover {
+    background-color: orange;
+    border: orange;
+    
+}

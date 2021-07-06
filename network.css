@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+label.logo{
+    margin-left: 190px;
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+  }
+nav{
+    background: black;
+    height: 70px;
+    width: 100%;
+    
+  }
+nav ul{
+    float: right;
+     margin-right: 150px;
+     font-family: 'Lustria', serif;
+  }
+  nav ul li{
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+  
+    text-decoration: none;
+    
+  
+  }
+  nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    text-decoration: none;
+      font-weight: 700;
+      background:
+      linear-gradient(currentColor 0 0) 0 0,
+      linear-gradient(currentColor 0 0) 0 0,
+      linear-gradient(currentColor 0 0) 100% 100%,
+      linear-gradient(currentColor 0 0) 100% 100%;
+    background-size: var(--d, 0) 3px, 3px var(--d, 0);
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
+  a.active,a:hover{
+    --d: 100%;
+      padding: 6px 24px;
+      color: white;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+      font-family: 'Lobster', cursive;
+    }
+    nav ul li a{
+      font-size: 16px;
+      
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      top: 70px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+     
+      
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      
+    }
+    nav ul li a{
+      font-size: 20px;
+     
+    }
+   
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  .upper1 h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Lustria', serif;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.upper img {
+    margin-top: 0px;
+    margin-left: 100px;
+width: 500px;
+height: 400px;
+float: left;
+border-radius: 50px;
+border: 2px solid black;
+}
+
+.upper h2 {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Lustria', serif;
+  font-size: 20px;
+   margin-right: 50px;
+}
+.upper p {
+  margin-left: 680px;
+text-align: justify;
+margin-right: 150px;
+margin-top: 40px;
+letter-spacing: .5px;
+font-size: 20px;
+margin-bottom: 50px;
+font-family: 'Lato', sans-serif;
+    
+}
+.upper2 {
+  margin-bottom: 150px;
+}
+.upper2 img {
+  margin-top: 50px;
+  margin-right: 150px;
+width: 500px;
+height: 400px;
+float: right;
+border-radius: 50px;
+border: 2px solid black;
+}
+
+.upper2 h2 {
+margin-top: 150px;
+text-align: center;
+font-family: 'Lustria', serif;
+font-size: 20px;
+ margin-left: 50px;
+}
+.upper2 p {
+margin-right: 680px;
+text-align: justify;
+margin-left: 50px;
+margin-top: 40px;
+letter-spacing: .5px;
+font-size: 20px;
+margin-bottom: 50px;
+font-family: 'Lato', sans-serif;
+  
+}
+.ft h1 {
+    font-family: 'Lustria', serif;
+  }
+  
+  .ft {
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+  }
+  .ft p {
+    margin-top: 5px;
+    font-family: 'Lato', sans-serif;
+  }
+  .ft .fa {
+    margin-top: 20px;
+    font-size: 50px;
+    letter-spacing: 30px;
+    text-align: center;
+    
+  }
+  .fa-arrow-right :hover {
+    background-color: transparent;
+  }
+  .fa-arrow-right {
+    background-color: transparent;
+  }
+  .ft .fa:hover {
+         color: white;
+         background-color: transparent;
+  }
+  .fa-linkedin-square {
+    color: rgb(73, 6, 128);
+    font-size: 70px;
+    animation: fa-beat 5s ease infinite;
+  }
+  
+  .fa-facebook-square {
+    color: skyblue;
+    font-size: 70px;
+    animation: fa-beat 5s ease infinite;
+  }
+  .fa-reddit-square {
+    color: orange;
+    font-size: 70px;
+    animation: fa-beat 5s ease infinite;
+  }
+  .fa-twitter-square {
+    color: lightblue;
+    font-size: 70px;
+    animation: fa-beat 5s ease infinite;
+  }
+  @keyframes fa-beat {
+    0% {
+      transform:scale(1);
+    }
+    5% {
+      transform:scale(1.50);
+    }
+    20% {
+      transform:scale(1);
+    }
+    30% {
+      transform:scale(1.50);
+    }
+    35% {
+      transform:scale(1);
+    }
+    50% {
+      transform:scale(1.50);
+    }
+    55% {
+      transform:scale(1);
+    }
+    70% {
+      transform:scale(1.50);
+    }
+  }
+  
